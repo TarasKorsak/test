@@ -4,10 +4,9 @@ module.exports = function () {
 	return {
 		devServer: {
 			stats: 'errors-only',
-			port: 9000
-		},
-		plugins: [
-			new webpack.HotModuleReplacementPlugin()
-		]
+			port: 9000,
+			hot: false,
+			open: true,
+		}
 	}
 };

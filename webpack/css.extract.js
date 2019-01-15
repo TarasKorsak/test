@@ -29,7 +29,7 @@
 		plugins: [
 			new ExtractTextPlugin('./css/[name].css'),
 			new PurifyCSSPlugin({
-				paths: glob.sync(path.join(__dirname, '../src/pages/**/*.pug'),  { nodir: true }),
+				paths: glob.sync(path.join(__dirname, '../src/**/*.pug'),  { nodir: true }),
 			})
 		]
 	};
