@@ -6,7 +6,6 @@ module.exports = function () {
 			stats: 'errors-only',
 			port: 9000,
 			hot: false,
-			open: true,
 		}
 	}
 };

@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+//- - var about = ['Отец, блогер, путешественник, спортсмен', 'Владелец 3 бизнесов (детский футбол, розница, онлайн)', 'Автор 6 книг и более 200 публикаций', 'Создал более 20 курсов и тренингов, которые прошли более 20 000 человек', 'Помог более 1 000 предпринимателей начать успешный бизнес', 'Владелец сети футбольных клубов для дошкольников', 'Успешно управляет более 130 людьми (и живет счастливо)', 'Создал мировую революцию в дестком футболе создав прибыльную модель футбольной школы для дошкольников от 3 до 7 лет', 'Выступал на одной сцене с Джорданом Белфордом (Волк с Уолл-Стрит)']
+include components/content
 html(lang="en")
 	head
 		meta(charset="UTF-8")
@@ -6,4 +8,18 @@ html(lang="en")
 		meta(http-equiv="X-UA-Compatible", content="ie=edge")
 		title test
 	body
-		p.container Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores aliquid quas non, a pariatur totam suscipit sequi. Quis consequatur delectus voluptatibus fuga sapiente architecto ipsam, cum reiciendis quasi. Cumque, odit?
+		header
+			.container
+				img(src=require('./assets/img/companyLogo.png'), alt="GOLD COACH")
+				p GoldCoach представляет…
+				p БЕСПЛАТНЫЙ ВЕБИНАР
+				p 10 ШАГОВ К СОЗДАНИЮ «САМОРАЗВИВАЮЩЕЙСЯ КОМПАНИИ» (ВКЛЮЧАЯ СВОБОДУ, КАК УПРАВЛЯТЬ 3 КОМПАНИЯМИ И ПРОЙТИ IRONMAN)
+				p.cta
+					a Забронировать место! >>
+		main
+			.container
+				.block1
+					.shedule
+					img(src=require('./assets/img/IvanZymbytsky.png'), alt="IvanZymbytsky")
+					+list
+				.block2
