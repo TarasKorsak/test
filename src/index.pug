@@ -21,5 +21,27 @@ html(lang="en")
 				.block1
 					.shedule
 					img(src=require('./assets/img/IvanZymbytsky.png'), alt="IvanZymbytsky")
-					+list
+					+list(about)
 				.block2
+					+list(advantages)
+		section.conditions
+			.container
+				p Формат участия: живое присутствие в онлайн (повтора и записи не будет) всего 500 мест
+				p.cta2 Для кого вебинар?
+				p Для существующих предпринимателей с чистым доходом от 150 000 рублей в месяц
+		section.imagine
+			.container
+				h3 Наконец-то, раскрыта технология как предпринимателю управлять прибыльным бизнесом (и даже не одним), при этом оставаясь свободным, здоровым и довольным жизнью, без стресса и необходимости жить на работе!
+				+list(imagine)
+		section.collage
+			.container
+				img(src=require('./assets/img/Screenshot_13.png'), alt="")
+		footer
+			.container
+				p И я знаю, что это возможно и для вас…
+				p Приходите на мой вебинар и раскрою вам свою технология в деталях. 
+				p.cta Да! Забронировать место сейчас! >>
+				socials
+					a(href="https://vk.com/", title="Vk").vk 
+					a(href="https://www.facebook.com/", title="facebook").fb 
+					a(href="https://twitter.com/", title="twitter").tw
