@@ -10,12 +10,14 @@ html(lang="en")
 	body
 		header
 			.container
-				img(src=require('./assets/img/companyLogo.png'), alt="GOLD COACH")
-				p GoldCoach представляет…
-				p БЕСПЛАТНЫЙ ВЕБИНАР
-				p 10 ШАГОВ К СОЗДАНИЮ «САМОРАЗВИВАЮЩЕЙСЯ КОМПАНИИ» (ВКЛЮЧАЯ СВОБОДУ, КАК УПРАВЛЯТЬ 3 КОМПАНИЯМИ И ПРОЙТИ IRONMAN)
-				p.cta
-					a Забронировать место! >>
+				.banner
+					img(src=require('./assets/img/companyLogo.png'), alt="GOLD COACH")
+					p GoldCoach представляет…
+				.webinar
+					p.h2 БЕСПЛАТНЫЙ ВЕБИНАР
+					p 10 ШАГОВ К СОЗДАНИЮ «САМОРАЗВИВАЮЩЕЙСЯ КОМПАНИИ» (ВКЛЮЧАЯ СВОБОДУ, КАК УПРАВЛЯТЬ 3 КОМПАНИЯМИ И ПРОЙТИ IRONMAN)
+					.cta
+						a Забронировать место! >>
 		main
 			.container
 				.block1
@@ -41,7 +43,7 @@ html(lang="en")
 				p И я знаю, что это возможно и для вас…
 				p Приходите на мой вебинар и раскрою вам свою технология в деталях. 
 				p.cta Да! Забронировать место сейчас! >>
-				socials
+				.socials
 					a(href="https://vk.com/", title="Vk").vk 
 					a(href="https://www.facebook.com/", title="facebook").fb 
 					a(href="https://twitter.com/", title="twitter").tw

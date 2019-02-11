@@ -1,5 +1,5 @@
 import './index.scss';
-import 'normalize.css';
+// import 'normalize.css';
 
 
 console.log('in index.js');

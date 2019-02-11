@@ -2,7 +2,8 @@
  const glob = require('glob');
  const path = require('path');
  const PurifyCSSPlugin = require('purgecss-webpack-plugin');
-
+ const postcss = require('postcss');
+ 
  module.exports = function (paths) {
 	return {
 		module: {
@@ -13,7 +14,14 @@
 					use: ExtractTextPlugin.extract({
 						publicPath:'../',
 						fallback: 'style-loader',
-						use: ['css-loader', 'sass-loader']
+						use: [
+							'css-loader', 
+							{
+								loader: 'postcss-loader',
+								options: { sourceMap: true, config: { path: 'postcss.config.js' } }
+							},
+							'sass-loader'
+						]
 					})
 				},
 				{
@@ -21,7 +29,13 @@
 					include: paths,
 					use: ExtractTextPlugin.extract({
 						fallback: 'style-loader',
-						use: 'css-loader'
+						use: [
+							'css-loader', 
+							{
+								loader: 'postcss-loader',
+								options: { sourceMap: true, config: { path: 'postcss.config.js' } }
+							}
+						]
 					})
 				}
 			]

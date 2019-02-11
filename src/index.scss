@@ -1,3 +1,6 @@
+@import "./scss/global";
+
+
 body {
 	margin: 0;
 }
@@ -11,20 +14,40 @@ body {
 header {
 	// display: flex;
 	text-align: center;
-	background-color: green
-	;
-	img {
-		width: 331px;
-		height: 78px;
+	.banner {
+		img {
+			width: 331px;
+			height: 78px;
+		}
+		p {
+			font-size: 27px;
+			font-family: $mainFont;
+			color: #18374b;
+			height: 26px;
+		}
 	}
-	// p {
-	// 	margin: auto;
-	// }
+	.webinar {
+		font-family: $secondFont;
+		font-weight: 700;
+		border-top: 1px solid #000;
+		width: 964px;
+		.h2 {
+			color: #ff621f;
+			font-size: 34px;
+			margin: 52px 100px 10px;
+		}
+		p {
+			font-size: 30px;
+			font-weight: 400;
+			color: #020001;
+			margin: auto;
+		}
+	}
 	.cta {
 		width: 436px;
 		height: 71px;
 		line-height: 71px;
-		margin: auto;
+		margin: 27px auto 0;
 		background-color: #ff621f;
 		border-bottom: 5px solid #ff332a;
 		a {
@@ -33,6 +56,7 @@ header {
 	}
 }
 main{
+	margin-top: 38px;
 	.container {
 		display: flex;
 		justify-content: center;
@@ -56,7 +80,7 @@ main{
 		
 	}
 }
-socials {
+.socials {
 	display: flex;
 	a {
 		display: block;
